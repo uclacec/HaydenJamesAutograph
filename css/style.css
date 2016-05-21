@@ -94,10 +94,21 @@ div#info1{
     color:white;
     padding:5%;
     display:none;
+    font-family: 'Droid Serif', serif;
+}
+#line-content input{
+    background-color:rgba(0,0,0,0);
+    border-top-color:rgba(0,0,0,0);
+    border-left-color:rgba(0,0,0,0);
+    border-right-color:rgba(0,0,0,0);
+}
+
+#post{
+    margin-top:10vh;
 }
 
 #haydenjames, #autograf{
-    margin-top: 100px;
+    top: 100px;
 }
 #haydenjames{
   position:relative;

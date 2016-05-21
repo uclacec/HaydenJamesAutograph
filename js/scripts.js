@@ -11,15 +11,14 @@
         var line=$('#line');
         //animates autograf logo to bottom left
         autograf.animate({
-            top:63+'vh',
+            top:76+'vh',
             left:1+'vw',
             width:10+'vw'
         },1000);
-        autograf.addClass('col-md-1', 1000);
 
         //animates haydenjames logo to top right
         haydenjames.animate({
-            top:-10+'vh',
+            top:5+'vh',
             left:78+'vw',
             width:10+'vw'
         },1000);
