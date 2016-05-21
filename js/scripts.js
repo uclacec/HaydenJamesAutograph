@@ -30,6 +30,10 @@
             left:20+'vw',
             opacity:.8
         },1000);
+        setTimeout(function(){
+            $('#line-content').fadeIn();
+        },1000);
+
 
         setTimeout(function(){
             $('#btn').fadeOut();

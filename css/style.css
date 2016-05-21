@@ -4,7 +4,8 @@ body {
   background: -o-linear-gradient(right, red, pink, yellow, orange); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, red, pink, yellow, orange); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, red, pink , yellow, orange); /* Standard syntax */
-    width:99vw;
+    width:100vw;
+    height:100vh;
 }
 
 
@@ -87,6 +88,12 @@ div#info1{
   position:absolute;
   top:10vh;
   left:51vw;
+    color:white;
+}
+#line-content{
+    color:white;
+    padding:5%;
+    display:none;
 }
 
 #haydenjames, #autograf{
