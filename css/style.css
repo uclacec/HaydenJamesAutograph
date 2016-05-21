@@ -37,6 +37,12 @@ div#date3{
 	background-color: black;
 }
 
+div#info_row{
+    position:absolute;
+    left:90vw;
+    top:78vh;
+}
+
 div.info{
 	color: white;
 	text-align: left;
@@ -60,6 +66,13 @@ div#info1{
 	margin-top: 10vh;
 }
 
+
+.layer2{
+    position:absolute;
+    z-index:5;
+}
+.layer2 h4, .layer2 div, .layer2 img{  position:absolute;  }
+
 #btn{
   position:absolute;
   cursor:pointer;
@@ -80,9 +93,11 @@ div#info1{
   position:relative;
   margin-top:50px;
   left:20vw;
+  width:30vw;
 }
 #autograf{
   position:relative;
   margin-top:50px;
   left:14vw;
+    width:30vw;
 }

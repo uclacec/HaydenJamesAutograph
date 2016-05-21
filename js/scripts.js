@@ -11,7 +11,7 @@
         var line=$('#line');
         //animates autograf logo to bottom left
         autograf.animate({
-            top:62+'vh',
+            top:70+'vh',
             left:1+'vw',
             width:10+'vw'
         },1000);
@@ -19,7 +19,7 @@
 
         //animates haydenjames logo to top right
         haydenjames.animate({
-            top:-13+'vh',
+            top:2+'vh',
             left:78+'vw',
             width:10+'vw'
         },1000);
