@@ -11,7 +11,7 @@
         var line=$('#line');
         //animates autograf logo to bottom left
         autograf.animate({
-            top:70+'vh',
+            top:63+'vh',
             left:1+'vw',
             width:10+'vw'
         },1000);
@@ -19,11 +19,10 @@
 
         //animates haydenjames logo to top right
         haydenjames.animate({
-            top:2+'vh',
+            top:-10+'vh',
             left:78+'vw',
             width:10+'vw'
         },1000);
-        haydenjames.addClass('col-md-1',1000);
 
         //animates line to take up more width
         line.animate({
@@ -31,7 +30,7 @@
             left:20+'vw',
             opacity:.8
         },1000);
-        line.addClass('col-md-8',1000);
+
         setTimeout(function(){
             $('#btn').fadeOut();
         },500)

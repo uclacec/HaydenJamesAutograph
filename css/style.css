@@ -86,18 +86,19 @@ div#info1{
   height:80vh;
   position:absolute;
   top:10vh;
-  left:50.5vw;
+  left:51vw;
 }
 
+#haydenjames, #autograf{
+    margin-top: 100px;
+}
 #haydenjames{
   position:relative;
-  margin-top:50px;
-  left:20vw;
+  left:23vw;
   width:30vw;
 }
 #autograf{
   position:relative;
-  margin-top:50px;
-  left:14vw;
-    width:30vw;
+  left:19vw;
+  width:30vw;
 }
