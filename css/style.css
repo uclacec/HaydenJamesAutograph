@@ -105,6 +105,14 @@ div#info1{
 
 #post{
     margin-top:10vh;
+    margin-left:10vw;
+}
+.post-thumb{
+    width:20vw;
+    height:auto;
+    margin:3%;
+    position:relative !important;
+    display:inline-block;
 }
 
 #haydenjames, #autograf{
