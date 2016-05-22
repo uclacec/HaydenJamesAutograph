@@ -99,7 +99,7 @@ div#info1{
     display:none;
     font-family: 'Droid Serif', serif;
 }
-#line-content input{
+#line-content input[type=text]{
     background-color:rgba(0,0,0,0);
     border-top-color:rgba(0,0,0,0);
     border-left-color:rgba(0,0,0,0);
@@ -107,8 +107,8 @@ div#info1{
 }
 
 #post{
-    margin-top:10vh;
-    margin-left:10vw;
+    background-color:rgba(0,0,0,.8);
+
 }
 .post-thumb{
     width:20vw;
