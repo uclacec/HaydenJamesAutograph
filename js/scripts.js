@@ -64,7 +64,7 @@
                 database.ref('images').push(a.href);
 
                 var imgRef = firebase.database().ref('images/');
-                imgRef.on('child_added', function(data) {
+                var realimgRef=imgRef.on('child_added', function(data) {
                     $("#realpost").attr("src",data.val());
                     //fbs_click(post);
                     window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(imgRef+data.val)+'&t=','sharer','toolbar=0,status=0,width=626,height=436');
