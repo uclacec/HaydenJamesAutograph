@@ -6,6 +6,7 @@ body {
   background: linear-gradient(to right, #E73384, #F7D528, #ED900D); /* Standard syntax */
   width:100vw;
   height:100vh;
+    overflow:hidden;
 }
 
 
@@ -15,7 +16,6 @@ div.date{
   padding-left: 5vw;
 	padding-right: 10px;
 	margin-bottom: 10px;
-
 }
 
 div#date_container{
@@ -23,33 +23,134 @@ div#date_container{
   top: 5vh;
   width: 100vw;
   font-family: 'Roboto', sans-serif !important;
+}
 
+/*Mobile Styling*/
+@media screen and (max-width: 480px) {
+    body{overflow-y:scroll;}
+
+    /*Pictures and logos*/
+    #haydenjames, #autograf{ height:20vh; display:block; left:35vw;}
+    #haydenjames{margin-top:5%;}
+    #autograf{margin-top:28%;}
+    #cecpic{  position:relative;  height: 20vh; text-align: center;  }
+    #mimpic{  position:relative;  height: 20vh;  text-align: center;  }
+
+    /*Logistics info styling*/
+    div.date{  margin:0 !important;  }
+    div#date0{  font-size:30px; background-color:black;  }
+    div#date2{ font-size:16px; background-color:black; margin: 3% 0 0 0 !important;}
+    div#info_row{
+        position:absolute;
+        top:15vh;
+        width: 100vw;
+        font-family: 'Roboto', sans-serif !important;
+    }
+    div#info1{margin:6vh 0 0 0 !important;}
+    div#info2{margin:0 !important;}
+
+    /*Post Styling*/
+    #line{
+        background-color:black;
+        width:0;
+        height:130vh;
+        position:absolute;
+        top:38vh;
+        left:50vw;
+        color:white;
+    }
+    #btn{
+        position:absolute;
+        cursor:pointer;
+        top:36vh;
+        width:100vw;
+        text-align: center;
+    }
+    .postimg{
+        width:25%;
+        display:inline-block;
+        margin:3%;
+    }
 }
 
 @media screen and (min-width: 480px) {
-  div#date_container{
-    position: absolute;
-    top: 10vh;
-    width: 15vw;
-    font-family: 'Roboto', sans-serif !important;
+    /*Pictures/logos*/
+    #haydenjames, #autograf{  top: 25vh;  }
+    #haydenjames{  left:22vw;  width:30vw;  }
+    #autograf{  left:18vw;  width:30vw;  }
+    #cecpic{  position:relative;  height: 8vw;  text-align: center;  }
+    #mimpic{  position:relative;  height: 8vw;  text-align: center;  }
 
-  }
+    /*logistics info*/
+    div#date_container{
+        position: absolute;
+        top: 10vh;
+        width: 15vw;
+        font-family: 'Roboto', sans-serif !important;
+    }
+    div.date{  text-align: right;  }
+    div#date0{  display:none;  }
+    div#date2{  font-size: 32px;  background-color: black;  }
+    div#info_row{
+        position:absolute;
+        top:75vh;
+        width: 100vw;
+        font-family: 'Roboto', sans-serif !important;
+    }
 
-  div.date{
-  text-align: right;
-  }
+    /*App styling*/
+    #line{
+        background-color:black;
+        width:3px;
+        height:82vh;
+        position:absolute;
+        top:10vh;
+        left:50vw;
+        color:white;
+    }
+    #line-content{
+        color:white;
+        padding:5%;
+        display:none;
+        font-size: 32px;
+        font-family: 'Roboto', serif !important;
+    }
+    #post{
+        margin-top:10vh;
+        text-align: center;
+        font-size: 32px;
+    }
+    #btn{
+        position:absolute;
+        cursor:pointer;
+        top:5vh;
+        width: 100vw;
+        text-align:center;
+    }
+    .postimg{
+        width:10%;
+        display:inline-block;
+        margin:3%;
+    }
+}
+
+#line{overflow-y:scroll;}
+#line::-webkit-scrollbar {
+    width: 1em;
+}
+
+#line::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#line::-webkit-scrollbar-thumb {
+    background-color: #e1e1e1;
+    outline: 1px solid slategrey;
 }
 
 div#date1{
 	font-size: 16px;
 	background-color: black;
-
-}
-
-div#date2{
-	font-size: 32px;
-	background-color: black;
-
 }
 
 div#date3{
@@ -57,17 +158,10 @@ div#date3{
 	background-color: black;
 }
 
-div#info_row{
-    position:absolute;
-    top:75vh;
-    width: 100vw;
-    font-family: 'Roboto', sans-serif !important;
-}
-
 div.info{
 	color: white;
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 20px;
 	margin-bottom: 10px;
 }
 
@@ -99,13 +193,11 @@ div#info1{
   div.info{
     color: white;
     text-align: left;
-    padding-left: 10px;
-    margin-bottom: 10px;
+    padding-left: 15px;
+    margin-bottom: 15px;
   }
 
 }
-
-
 
 .layer2{
     position:absolute;
@@ -113,63 +205,11 @@ div#info1{
 }
 .layer2 h4, .layer2 div, .layer2 img{  position:absolute;  }
 
-#btn{
-  position:absolute;
-  cursor:pointer;
-  top:20vh;
-  width:100vw;
-  text-align: center;
-}
-
-@media screen and (min-width: 480px) {
-  #btn{
-    position:absolute;
-    cursor:pointer;
-    top:5vh;
-    width: 100vw;
-    }
-}
-
-
-#line{
-  background-color:black;
-  width:0px;
-  height:50vh;
-  position:absolute;
-  top:30vh;
-  left:50vw;
-  color:white;
-}
-
-@media screen and (min-width: 480px) {
-  #line{
-    background-color:black;
-    width:3px;
-    height:80vh;
-    position:absolute;
-    top:10vh;
-    left:50vw;
-    color:white;
-  }
-  #line-content{
-    color:white;
-    padding:5%;
-    display:none;
-    font-size: 32px;
-    font-family: 'Roboto', serif !important;
-  }
-  #post{
-    margin-top:10vh;
-    text-align: center;
-    font-size: 32px;
-  }
-}
-
 #line-content{
     color:white;
     padding:5%;
     display:none;
-    font-size: 16px;
+    font-size: 1.1em;
     font-family: 'Roboto', serif !important;
 }
 
@@ -180,67 +220,27 @@ div#info1{
     border-right-color:rgba(0,0,0,0);
     text-align: center;
 }
+#line-content ol{font-size:.8em;}
 
 #post{
     background-color:rgba(0,0,0,.8);
-    padding:5% 10% 5% 10%;
+    padding:5% 3% 5% 3%;
     border: solid 2px white;
-    margin-top:10vh;
+    margin-top:2vh;
     text-align: center;
-    font-size: 32px;
+    font-size: 1.1em;
 }
-#postinput{margin:3%;}
+#postinput{margin:2%;}
 #logos{
   margin-top: 10px;
 }
 
 #haydenjames, #autograf{
     top: 25vh;
-}
-#haydenjames{
-  position:relative;
-  left:22vw;
-  width:30vw;
-}
-
-#autograf{
-  position:relative;
-  left:18vw;
-  width:30vw;
-}
-
-@media screen and (min-width: 480px) {
-  #haydenjames, #autograf{
-    top: 25vh;
-  }
-}
-
-@media screen and (min-width: 480px) {
-
-  #cecpic{
     position:relative;
-    height: 8vw;
-    text-align: center;
-  }
-
-  #mimpic{
-    position:relative;
-    height: 8vw;
-    text-align: center;
-  }
 }
 
-#cecpic{
-    position:relative;
 
-    height: 20vh;
-    text-align: center;
-  }
 
-  #mimpic{
-    position:relative;
-    height: 20vh;
-    text-align: center;
-  }
 
 
