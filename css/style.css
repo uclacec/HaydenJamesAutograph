@@ -71,6 +71,14 @@ div#date_container{
         display:inline-block;
         margin:3%;
     }
+    #post{
+        background-color:rgba(0,0,0,.8);
+        padding:5% 3% 5% 3%;
+        border: solid 2px white;
+        margin-top:2vh;
+        text-align: center;
+        font-size: 2em;
+    }
 }
 
 @media screen and (min-width: 480px) {
@@ -222,14 +230,7 @@ div#info1{
 }
 #line-content ol{font-size:.8em;}
 
-#post{
-    background-color:rgba(0,0,0,.8);
-    padding:5% 3% 5% 3%;
-    border: solid 2px white;
-    margin-top:2vh;
-    text-align: center;
-    font-size: 1.1em;
-}
+
 #postinput{margin:2%;}
 #logos{
   margin-top: 10px;
