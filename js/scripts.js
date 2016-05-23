@@ -7,11 +7,32 @@
         apiKey: "AIzaSyDjsSaVcA5Sb_JB5QujIK3Ayhwao2Knlgc",
         authDomain: "project-8001030731840866776.firebaseapp.com",
         databaseURL: "https://project-8001030731840866776.firebaseio.com",
-        storageBucket: "",
+        storageBucket: "project-8001030731840866776.appspot.com"
     };
     firebase.initializeApp(config);
-    // Get a reference to the database service
-    var database = firebase.database();
+
+    // Get a reference to the storage service, which is used to create references in your storage bucket
+    var storage = firebase.storage();
+
+    // Create a storage reference from our storage service
+    var storageRef = storage.ref();
+    // Create a child reference
+
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '',
+            xfbml      : true,
+            version    : 'v2.6'
+        });
+    };
+
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 
     //when clicked
     $('#btn').on('click',introAnimate);
@@ -57,25 +78,10 @@
                 var a = document.createElement('a');
                 //saves canvas image as jpg
                 a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
-                num++;
-                //imgname.update(num);
-
-                //push url to firebase
-                database.ref('images').push(a.href);
-
-                var imgRef = firebase.database().ref('images/');
-                imgRef.on('child_added', function(data) {
-                    $("#realpost").attr("src",data.val());
-                    //fbs_click(post);
-                    //window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(imgRef+data.val)+'&t=','sharer','toolbar=0,status=0,width=626,height=436');
-                });
+                a.download = "HaydenJamesAutografLyrics.jpg";
+                a.click();
             });
         });
-        function fbs_click(TheImg) {
-            u=TheImg.src;
-            // t=document.title;
-            t=TheImg.getAttribute('alt');
-            window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer','toolbar=0,status=0,width=626,height=436');return false;
-        }
+
     }
 })();
