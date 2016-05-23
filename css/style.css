@@ -1,9 +1,9 @@
 body {
   background: red; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, red, pink , yellow, orange); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, red, pink, yellow, orange); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, red, pink, yellow, orange); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, red, pink , yellow, orange); /* Standard syntax */
+  background: -webkit-linear-gradient(left, #E73384 , #F7D528, #ED900D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #E73384, #F7D528, #ED900D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #E73384, #F7D528, #ED900D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #E73384, #F7D528, #ED900D); /* Standard syntax */
   width:100vw;
   height:100vh;
 }
@@ -11,7 +11,8 @@ body {
 
 div.date{
 	color: white;
-	text-align: right;
+	text-align: left;
+  padding-left: 5vw;
 	padding-right: 10px;
 	margin-bottom: 10px;
 
@@ -19,8 +20,24 @@ div.date{
 
 div#date_container{
 	position: absolute;
-  top: 10vh;
-  width: 15vw;
+  top: 5vh;
+  width: 100vw;
+  font-family: 'Roboto', sans-serif !important;
+
+}
+
+@media screen and (min-width: 480px) {
+  div#date_container{
+    position: absolute;
+    top: 10vh;
+    width: 15vw;
+    font-family: 'Roboto', sans-serif !important;
+
+  }
+
+  div.date{
+  text-align: right;
+  }
 }
 
 div#date1{
@@ -41,10 +58,10 @@ div#date3{
 }
 
 div#info_row{
-    position:absolute;
-    left:85vw;
+    position:absolute;   
     top:75vh;
-    width:15vw;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif !important;
 }
 
 div.info{
@@ -70,6 +87,25 @@ div#info1{
 	margin-top: 10vh;
 }
 
+@media screen and (min-width: 480px) {
+  div#info_row{
+    position:absolute;
+    left:85vw;
+    top:75vh;
+    width:15vw;
+    font-family: 'Roboto', sans-serif !important;
+
+  }
+  div.info{
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+
 
 .layer2{
     position:absolute;
@@ -80,54 +116,128 @@ div#info1{
 #btn{
   position:absolute;
   cursor:pointer;
-  top:10vh;
-  left:47vw;
+  top:20vh;
+  width:100vw;
+  text-align: center;
 }
+
+@media screen and (min-width: 480px) {
+  #btn{
+    position:absolute;
+    cursor:pointer;
+    top:5vh;
+    width: 100vw;
+    }
+}
+
 
 #line{
   background-color:black;
-  width:3px;
-  height:80vh;
+  width:0px;
+  height:50vh;
   position:absolute;
-  top:10vh;
-  left:51vw;
-    color:white;
+  top:30vh;
+  left:50vw;
+  color:white;
 }
+
+@media screen and (min-width: 480px) {
+  #line{
+    background-color:black;
+    width:3px;
+    height:80vh;
+    position:absolute;
+    top:10vh;
+    left:50vw;
+    color:white;
+  }
+  #line-content{
+    color:white;
+    padding:5%;
+    display:none;
+    font-size: 32px;
+    font-family: 'Roboto', serif !important;
+  }
+  #post{
+    margin-top:10vh;
+    text-align: center;
+    font-size: 32px;
+  } 
+}
+
 #line-content{
     color:white;
     padding:5%;
     display:none;
-    font-family: 'Droid Serif', serif;
+    font-size: 16px;
+    font-family: 'Roboto', serif !important;
 }
+
 #line-content input{
     background-color:rgba(0,0,0,0);
     border-top-color:rgba(0,0,0,0);
     border-left-color:rgba(0,0,0,0);
     border-right-color:rgba(0,0,0,0);
+    text-align: center;
 }
 
 #post{
     margin-top:10vh;
-    margin-left:10vw;
+    text-align: center;
+    font-size: 32px;
 }
-.post-thumb{
-    width:20vw;
-    height:auto;
-    margin:3%;
-    position:relative !important;
-    display:inline-block;
+
+#logos{
+  margin-top: 10px;
 }
 
 #haydenjames, #autograf{
-    top: 100px;
+    top: 25vh;
 }
 #haydenjames{
   position:relative;
-  left:23vw;
+  left:22vw;
   width:30vw;
 }
+
 #autograf{
   position:relative;
-  left:19vw;
+  left:18vw;
   width:30vw;
 }
+
+@media screen and (min-width: 480px) {
+  #haydenjames, #autograf{
+    top: 25vh;
+  } 
+}
+
+@media screen and (min-width: 480px) {
+
+  #cecpic{
+    position:relative;
+    height: 8vw;
+    text-align: center;
+  }
+
+  #mimpic{
+    position:relative;  
+    height: 8vw;
+    text-align: center;
+  }
+}
+
+#cecpic{
+    position:relative;
+
+    height: 20vh;
+    text-align: center;
+  }
+
+  #mimpic{
+    position:relative;  
+    height: 20vh;
+    text-align: center;
+  }
+
+
