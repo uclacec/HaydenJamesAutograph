@@ -230,7 +230,9 @@ div#info1{
 }
 #line-content ol{font-size:.8em;}
 
-
+#post{
+    border:solid 2px white;
+}
 #postinput{margin:2%;}
 #logos{
   margin-top: 10px;
@@ -241,7 +243,20 @@ div#info1{
     position:relative;
 }
 
-
-
-
-
+#post1{
+    transform:scale(1.13,1.13);
+    background-color:rgba(0,0,0,.8);
+    padding:5% 3% 5% 3%;
+    margin-top:2vh;
+    text-align: center;
+    font-size: 2em;
+}
+.first-line, .last-line, form{font-family:Roboto, sans-serif !important; color:white!important; font-size:1.2em;}
+input{
+    background-color:rgba(0,0,0,0);
+    border-top-color:rgba(0,0,0,0);
+    border-left-color:rgba(0,0,0,0);
+    border-right-color:rgba(0,0,0,0);
+    text-align: center;
+}
+ol{font-size:.8em;}

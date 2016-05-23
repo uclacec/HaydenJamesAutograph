@@ -60,7 +60,7 @@
         }
     ];
     var randLyric=Math.floor((Math.random() * 11 ) + 1)-1;
-    $('#first-line').text(list[randLyric].fl);
-    $('#last-line').text(list[randLyric].ll);
+    $('.first-line').text(list[randLyric].fl);
+    $('.last-line').text(list[randLyric].ll);
     $('#sign').text(list[randLyric].sign);
 })();
