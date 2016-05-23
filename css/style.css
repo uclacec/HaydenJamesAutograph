@@ -33,8 +33,8 @@ div#date_container{
     #haydenjames, #autograf{ height:20vh; display:block; left:35vw;}
     #haydenjames{margin-top:5%;}
     #autograf{margin-top:28%;}
-    #cecpic{  position:relative;  height: 20vh; text-align: center;  }
-    #mimpic{  position:relative;  height: 20vh;  text-align: center;  }
+    #cecpic{  position:relative;  height: 15vh; text-align: center;  }
+    #mimpic{  position:relative;  height: 15vh;  text-align: center;  }
 
     /*Logistics info styling*/
     div.date{  margin:0 !important;  }
@@ -209,7 +209,7 @@ div#info1{
     color:white;
     padding:5%;
     display:none;
-    font-size: 1.1em;
+    font-size: 1em;
     font-family: 'Roboto', serif !important;
 }
 
