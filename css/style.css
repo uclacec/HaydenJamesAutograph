@@ -109,14 +109,9 @@ div#info1{
 #post{
     background-color:rgba(0,0,0,.8);
     padding:5% 10% 5% 10%;
+    border: solid 2px white;
 }
-.post-thumb{
-    width:20vw;
-    height:auto;
-    margin:3%;
-    position:relative !important;
-    display:inline-block;
-}
+#postinput{margin:3%}
 
 #haydenjames, #autograf{
     top: 100px;
