@@ -40,14 +40,17 @@
             },500);
             var post=document.getElementById("autograf");
             $('#postinput').on("click",function(){
-                html2canvas(document.getElementById("post")).then(function(canvas) {
-                    //document.body.appendChild(canvas);
-                    var a = document.createElement('a');
-                    //saves canvas image as jpg
-                    a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
-                    a.download = "HaydenJamesAutografLyrics.jpg";
-                    a.click();
-                });
+                html2canvas(document.getElementById("post"),{
+                    onrendered:function(canvas) {
+                        //document.body.appendChild(canvas);
+                        var a = document.createElement('a');
+                        //saves canvas image as jpg
+                        a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+                        a.download = "HaydenJamesAutografLyrics.jpg";
+                        a.click();
+                    }
+                }
+                );
             });
         });
     //var original= firebase.database().ref('imageName');
