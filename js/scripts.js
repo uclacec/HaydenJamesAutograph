@@ -42,7 +42,7 @@
             $('#postinput').on("click",function(){
                 $('#input2').val($('#input1').val());
                 setTimeout(function(){
-                    html2canvas(document.getElementById("post1"),{
+                    html2canvas(document.getElementById("post"),{
                             onrendered:function(canvas) {
                                 //document.body.appendChild(canvas);
                                 var a = document.createElement('a');

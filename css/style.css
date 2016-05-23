@@ -67,7 +67,7 @@ div#date_container{
         text-align: center;
     }
     .postimg{
-        width:25%;
+        width:28%;
         display:inline-block;
         margin:3%;
     }
@@ -79,6 +79,10 @@ div#date_container{
         text-align: center;
         font-size: 2em;
     }
+    form{font-size:.5em;}
+    .first-line{font-size:.5em !important;}
+    .last-line{  font-size: .5em !important;}
+    input{font-size:.5em !important;}
 }
 
 @media screen and (min-width: 480px) {
@@ -136,7 +140,7 @@ div#date_container{
         text-align:center;
     }
     .postimg{
-        width:10%;
+        width:18%;
         display:inline-block;
         margin:3%;
     }
@@ -251,7 +255,7 @@ div#info1{
     text-align: center;
     font-size: 2em;
 }
-.first-line, .last-line, form{font-family:Roboto, sans-serif !important; color:white!important; font-size:1.2em;}
+.first-line, .last-line, form{font-family:Roboto, sans-serif !important; color:white!important; font-size:1.1em;}
 input{
     background-color:rgba(0,0,0,0);
     border-top-color:rgba(0,0,0,0);
